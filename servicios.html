@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Servicios | Sonrisa Perfecta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header class="main-header">
+  <div class="brand">🦷 Sonrisa Perfecta</div>
+  <nav class="nav-menu">
+    <a href="index.html"style="border: 2px solid var(--secondary)">Inicio</a>
+    <a href="servicios.html"style="border: 2px solid var(--secondary)">Servicios</a>
+    <a href="tratamientos.html"style="border: 2px solid var(--secondary)">Tratamientos</a>
+    <a href="productos.html"style="border: 2px solid var(--secondary)">Productos</a>
+    <a href="nosotros.html"style="border: 2px solid var(--secondary)">Nosotros</a>
+    <a href="citas.html"style="border: 2px solid var(--secondary)">Citas</a>
+  </nav>
+</header>
+
+  <section class="section-padding">
+    <h2>Nuestros Servicios</h2>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Odontología General (Prevención y Mantenimiento)</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Es la base de la salud oral y el primer punto de contacto.</p>
+
+<p>Revisiones y diagnósticos: Evaluaciones periódicas para detectar problemas antes de que se vuelvan graves, a menudo utilizando radiografías digitales.</p>
+<p>Limpiezas profesionales (Profilaxis): Eliminación de sarro y placa bacteriana para prevenir gingivitis y caries.</p>
+<p>Obturaciones (Empastes): Tratamiento para eliminar caries y restaurar el diente con materiales seguros.</p>
+          <img src="Odontología General (Prevención y Mantenimiento).jpg" width="50%">
+        </div>
+      </div>
+    </div>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Estética Dental</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Enfocada en mejorar la apariencia de la sonrisa.</p>
+          <p>Blanqueamiento dental: Tratamientos para aclarar el tono de los dientes.</p>
+          <p>Carillas dentales: Láminas finas (porcelana o composite) que se colocan sobre el diente para corregir forma, color o pequeñas alineaciones.</p>
+          <p>Diseño de sonrisa: Planificación personalizada para armonizar la estética de toda la dentadura.</p>
+          <img src="Estética Dental.jpg" width="50%">
+        </div>
+      </div>
+    </div>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Ortodoncia</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Especialidad encargada de alinear los dientes y corregir la mordida.</p>
+          <p>Brackets: Tradicionales (metálicos) o estéticos (cerámica/zafiro).</p>
+          <p>Alineadores invisibles (ej. Invisalign): Opción removible y discreta mediante férulas transparentes.</p>
+          <p>Ortopedia dentofacial: Corrección de problemas óseos y de crecimiento, especialmente en niños y adolescentes.</p>
+          <img src="Ortodoncia.jpg" width="50%">
+        </div>
+      </div>
+    </div>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Especialidades Restauradoras y Quirúrgicas</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Endodoncia: Tratamiento de conducto para salvar un diente cuando la pulpa (nervio) está afectada o infectada.</p>
+          <p>Implantología dental: Colocación de raíces artificiales de titanio para sustituir dientes perdidos.</p>
+          <p>Periodoncia: Tratamiento de enfermedades de las encías (gingivitis y periodontitis) y soporte del diente.</p>
+          <p>Cirugía oral: Incluye extracciones complejas, como las muelas del juicio, y otras intervenciones en la cavidad oral.</p>
+          <p>Prótesis: Elaboración de coronas, puentes o dentaduras (fijas o removibles) para restaurar la función masticatoria.</p>
+          <img src="Especialidades Restauradoras y Quirúrgicas.jpg" width="50%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showInfo(el) {
+      const panel = el.nextElementSibling;
+      panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

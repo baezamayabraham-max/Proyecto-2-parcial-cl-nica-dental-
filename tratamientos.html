@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Servicios | Sonrisa Perfecta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="main-header">
+  <div class="brand">🦷 Sonrisa Perfecta</div>
+  <nav class="nav-menu">
+    <a href="index.html"style="border: 2px solid var(--secondary)">Inicio</a>
+    <a href="servicios.html"style="border: 2px solid var(--secondary)">Servicios</a>
+    <a href="tratamientos.html"style="border: 2px solid var(--secondary)">Tratamientos</a>
+    <a href="productos.html"style="border: 2px solid var(--secondary)">Productos</a>
+    <a href="nosotros.html"style="border: 2px solid var(--secondary)">Nosotros</a>
+    <a href="citas.html"style="border: 2px solid var(--secondary)">Citas</a>
+  </nav>
+</header>
+
+  <section class="section-padding">
+    <h2>Nuestros Tratamientos</h2>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Tratamientos Preventivos (Mantenimiento)</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Su finalidad es evitar la aparición de patologías o detectar problemas en sus etapas más tempranas.</p>
+          <p>Limpieza dental profesional (Profilaxis): Eliminación del sarro y la placa bacteriana acumulada en lugares donde el cepillado diario no llega.</p>
+          <p>Revisiones periódicas: Exámenes visuales y radiológicos (panorámicas o periapicales) para evaluar la salud de dientes, encías y estructuras óseas.</p>
+          <p>Selladores dentales: Aplicación de una capa protectora sobre los surcos de las muelas para prevenir la acumulación de bacterias y la formación de caries (muy común en niños).</p>
+          <p>Aplicación de flúor: Fortalece el esmalte dental y ayuda a prevenir la sensibilidad y la formación de caries.</p>
+          <img src="Tratamientos Preventivos (Mantenimiento).jpg" width="50%">
+        </div>
+      </div>
+    </div>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Tratamientos Restauradores (Reparación)</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Cuando ya existe una lesión, estos procedimientos buscan devolver la funcionalidad y la integridad a la pieza dental.</p>
+          <p>Obturaciones (Empastes): Eliminación del tejido dental afectado por caries y su sustitución por materiales estéticos (resinas) o funcionales.</p>
+          <p>Endodoncia: También llamado "tratamiento de conducto". Se realiza cuando la caries o una fractura alcanza la pulpa (nervio). Se limpia el interior del diente para salvar la pieza, evitando la extracción.</p>
+          <p>Coronas y puentes: Fundas (coronas) que cubren un diente debilitado o sustitutos (puentes) para reemplazar una o varias piezas perdidas, apoyándose en los dientes adyacentes.</p>
+          <img src="Tratamientos Restauradores (Reparación).jpg" width="50%">
+        </div>
+      </div>
+    </div>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Cirugía y Reemplazo de Piezas</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Extracción (Exodoncia): Procedimiento para retirar dientes que no pueden ser salvados (por caries profunda, fracturas graves) o muelas del juicio que causan problemas de espacio.</p>
+          <p>Implantes dentales: Sustitución de la raíz natural del diente por una pieza de titanio que se integra al hueso, sobre la cual se coloca una corona. Es la opción más duradera para recuperar dientes perdidos.</p>
+          <img src="Tratamientos Restauradores (Reparación).jpg" width="50%">
+        </div>
+      </div>
+    </div>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Estética Dental</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Blanqueamiento: Tratamiento químico para eliminar manchas profundas y aclarar el tono natural de los dientes.</p>
+          <p>Carillas: Finas láminas de porcelana o composite que se adhieren a la parte frontal del diente para mejorar su forma, color o cerrar espacios.</p>
+          <img src="Estética Dental 2.1.jpg" width="50%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showInfo(el) {
+      const panel = el.nextElementSibling;
+      panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Servicios | Sonrisa Perfecta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="main-header">
+  <div class="brand">🦷 Sonrisa Perfecta</div>
+  <nav class="nav-menu">
+    <a href="index.html"style="border: 2px solid var(--secondary)">Inicio</a>
+    <a href="servicios.html"style="border: 2px solid var(--secondary)">Servicios</a>
+    <a href="tratamientos.html"style="border: 2px solid var(--secondary)">Tratamientos</a>
+    <a href="productos.html"style="border: 2px solid var(--secondary)">Productos</a>
+    <a href="nosotros.html"style="border: 2px solid var(--secondary)">Nosotros</a>
+    <a href="citas.html"style="border: 2px solid var(--secondary)">Citas</a>
+  </nav>
+</header>
+
+  <section class="section-padding">
+    <h2>Nuestros Productos</h2>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Cepillos dentales</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+        <p>Cepilo.</p>
+          <img src="cepillo.jpeg" width="10%">
+          <p>$25.00 MX</p>
+
+          <p>Cepillo electrico</p>
+          <img src="cepillo electrico oral b.jpg" width="10%">
+          <p>$450.00 MX</p>
+
+          <p>Cepillo de cerdas ultra suaves</p>
+          <img src="Cepillos de cerdas ultra suaves.jpg" width="10%">
+          <p>$50.00 MX</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Pastas dentales</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Pasta anticaries</p>
+          <img src="pasta anticaries.jpg" width="10%">
+          <p>$60.00 MX</p>
+
+          <p>Pasta Para dientes sensibles</p>
+          <img src="pasta Para dientes sensibles.jpeg" width="10%">
+          <p>$150.00 MX</p>
+
+          <p>Pasta blanqueadora</p>
+          <img src="pasta Blanqueadora.jpg" width="10%">
+          <p>$90.00 MX</p>
+
+          <p>Pasta antisarro</p>
+          <img src="pasta Antisarro.jpg" width="10%">
+          <p>$85.00 MX</p>
+
+          <p>Pasta dental para niños</p>
+          <img src="pasta dental para niños.jpg" width="10%">
+          <p>$40.00 MX</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Hilo y cinta dental</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Hilo dental cilindro fino (tipo cuerda)</p>
+          <img src="hilo dental Cilindro fino (tipo cuerda).jpg" width="10%">
+          <p>$100.00 MX</p>
+
+          <p>Hilo dental espacios interdentales estrechos</p>
+          <img src="hilo dental Espacios interdentales estrechos.jpg" width="10%">
+          <p>$120.00 MX</p>
+
+          <p>Hilo dental muy preciso</p>
+          <img src="hilo dental Muy preciso, puede ser más difícil de manejar.jpg" width="10%">
+          <p>$140.00 MX</p>
+        </div>
+      </div>
+    </div><div class="grid-auto">
+      <div class="service-box">
+        <div class="card-item" onclick="showInfo(this)">
+          <h3>Enjuagues bucales</h3>
+          <small>Hacer clic para ver más</small>
+        </div>
+        <div class="info-panel">
+          <p>Enjuague bucal estéticos (Diarios)</p>
+          <img src="enjuague bucal Estéticos (Diarios).jpg" width="10%">
+          <p>$250.00 MX</p>
+
+          <p>Enjuague bucal Fluorados</p>
+          <img src="enjuague bucal Fluorados.png" width="10%">
+          <p>$100.00 MX</p>
+
+          <p>Enjuague bucal antisépticos</p>
+          <img src="enjuague bucal Antisépticos.jpg" width="10%">
+          <p>$130.00 MX</p>
+
+          <p>Enjuague bucal para encías</p>
+          <img src="enjuague bucal Para encías.png" width="10%">
+          <p>$280.00 MX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <script>
+    function showInfo(el) {
+      const panel = el.nextElementSibling;
+      panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
