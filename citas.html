@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Citas | Clínica Dental</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="main-header">
+  <div class="brand">🦷 Sonrisa Perfecta</div>
+  <nav class="nav-menu">
+    <a href="index.html"style="border: 2px solid var(--secondary)">Inicio</a>
+    <a href="servicios.html"style="border: 2px solid var(--secondary)">Servicios</a>
+    <a href="tratamientos.html"style="border: 2px solid var(--secondary)">Tratamientos</a>
+    <a href="productos.html"style="border: 2px solid var(--secondary)">Productos</a>
+    <a href="nosotros.html"style="border: 2px solid var(--secondary)">Nosotros</a>
+    <a href="citas.html"style="border: 2px solid var(--secondary)">Citas</a>
+  </nav>
+</header>
+
+  <section class="section-padding" style="max-width:400px; margin:auto;">
+    <h2>Reserva tu cita</h2>
+    <form id="miFormulario">
+        <div class="form-group">
+          <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+        </div>
+        <div class="form-group">
+          <label style="display:block; text-align:left; margin-bottom:5px; font-size:0.9rem; color:var(--primary);">Fecha de la cita:</label>
+          <input type="date" id="fecha" name="Fecha" required>
+        </div>
+
+        <button type="submit" class="btn">Enviar Datos</button>
+      </form>
+
+      <p id="mensaje" style="margin-top:20px; font-weight:bold; color:var(--primary);"></p>
+    </div>
+  </section>
+
+  <script>
+    const url = "https://script.google.com/macros/s/AKfycby_iu49AQBYdu7jH1k_0ANGAirQY7zASJlyGxZCbDclK1TxiXWna822dee754mTs4vAZg/exec"; 
+
+    document.getElementById("miFormulario").addEventListener("submit", function(e){
+      e.preventDefault();
+      const btn = e.target.querySelector("button");
+      btn.innerText = "Enviando...";
+      btn.disabled = true;
+
+      const datos = {
+        nombres: document.getElementById("nombres").value,
+        apellidos: document.getElementById("apellidos").value,
+        telefono: document.getElementById("telefono").value,
+        fecha: document.getElementById("fecha").value
+      };
+
+      fetch(url, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(datos)
+      }) 
+      .then(res => {
+        document.getElementById("mensaje").innerHTML = "¡Cita enviada correctamente! ✔️";
+        document.getElementById("miFormulario").reset();
+      })
+      .catch(error => {
+        document.getElementById("mensaje").innerHTML = "Error al enviar ❌";
+        console.error(error);
+      })
+      .finally(() => {
+        btn.innerText = "Enviar Datos";
+        btn.disabled = false;
+      });
+    });
+  </script>
+</body>
+</html>
